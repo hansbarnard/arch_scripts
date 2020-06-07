@@ -47,7 +47,7 @@ useradd -m "$USER_NAME"
 echo "$USER_NAME:changeme" | chpasswd
 echo "$USER_NAME ALL=(ALL) NOPASSWD: ALL">"/etc/sudoers.d/$USER_NAME"
 
-echo '==== improving MAKEFLAG for multicore CPU'
+echo '===== Improving MAKEFLAG for multicore CPU'
 echo 'MAKEFLAGS="-j $(nproc)"' >> /etc/makepkg.conf
 
 echo '===== Enabling SSHD'

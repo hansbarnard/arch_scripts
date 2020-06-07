@@ -3,6 +3,12 @@
 OPT="--color always -q --noprogressbar --noconfirm --logfile pacman-$0.log"
 
 drive=$1
+if [ -z "$drive" ]
+then
+  echo "Error: no drive specified."
+  exit 1
+fi
+
 parttab=`fdisk -l /dev/$drive | grep -i "disklabel type" | awk -F: '{print $2}'`
 
 if [ -z $parttab ]
@@ -38,7 +44,8 @@ fi
 
 echo "===== Formatting root partition: $rootpart"
 mkfs.ext4 $rootpart 1> /dev/null
-e2label $rootpart ARCH_ROOT
+e2label $rootpart ARCH_ROOT 1> /dev/null
+
 echo "===== Success!"
 
 

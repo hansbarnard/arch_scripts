@@ -7,6 +7,12 @@ then
   exit 1
 fi
 
+if ! ./pre-install.sh
+then
+  echo "===== Initialization failed. Exiting..."
+  exit 1
+fi
+
 
 if ! ./create-partitions.sh $drive
 then

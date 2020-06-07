@@ -6,4 +6,4 @@ cp font.txt /mnt/scripts 1>/dev/null
 cp post-chroot.sh /mnt/scripts
 
 echo "===== Calling post chroot script"
-arch-chroot /mnt /scripts/pos-chroot.sh
+arch-chroot /mnt /scripts/post-chroot.sh
