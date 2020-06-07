@@ -29,4 +29,7 @@ pacstrap /mnt terminus-font 1> /dev/null
 echo "===== Installing SSH and sudo"
 pacstrap /mnt openssh sudo 1> /dev/null
 
+echo "===== Generate fstab file"
+genfstab -U /mnt >> /mnt/etc/fstab
+genfstab -U /mnt/boot >> /mnt/etc/fstab
 
