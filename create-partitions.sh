@@ -24,7 +24,7 @@ then
 fi
 
 echo "===== Formatting EFI System Partition"
-mkfs.fat -F32 $esp
+mkfs.fat -F32 $esp 1> /dev/null
 
 echo "===== Creating root partition."
 parted --script /dev/$drive -- mkpart primary ext4 300MiB -1MiB
@@ -37,7 +37,7 @@ then
 fi
 
 echo "===== Formatting root partition: $rootpart"
-mkfs.ext4 $rootpart
+mkfs.ext4 $rootpart 1> /dev/null
 e2label $rootpart ARCH_ROOT
 echo "===== Success!"
 

@@ -14,7 +14,7 @@ then
   exit 1
 fi
 
-if ! ./install-linux.sh
+if ! ./install-linux.sh $drive
 then
   echo "===== Install failed. Exiting..."
   exit 1
