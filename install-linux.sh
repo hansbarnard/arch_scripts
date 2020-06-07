@@ -22,8 +22,8 @@ echo "===== Refreshing repositories"
 pacman -Syy 1> /dev/null
 echo "===== Installing base and linux packages"
 pacstrap /mnt base linux linux-firmware 1> /dev/null
-echo "===== Installing additional"
-pacstrap /mnt tree zip unzip nano ncdu htop 1> /dev/null
+#echo "===== Installing additional"
+#pacstrap /mnt tree zip unzip nano ncdu htop 1> /dev/null
 echo "===== Installing custom fonts"
 pacstrap /mnt terminus-font 1> /dev/null
 echo "===== Installing SSH and sudo"
@@ -31,5 +31,4 @@ pacstrap /mnt openssh sudo 1> /dev/null
 
 echo "===== Generate fstab file"
 genfstab -U /mnt >> /mnt/etc/fstab
-genfstab -U /mnt/boot >> /mnt/etc/fstab
 

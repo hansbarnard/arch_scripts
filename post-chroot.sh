@@ -7,6 +7,9 @@ pacman -Rns --noconfirm netctl  &>/dev/null
 pacman -S networkmanager --noconfirm &>/dev/null
 systemctl enable NetworkManager &>/dev/null
 
+#echo "===== Installing additional"
+pacman -Syy tree zip unzip nano ncdu htop 1> /dev/null
+
 echo '===== Setting up clock'
 ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime
 hwclock --systohc
