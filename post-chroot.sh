@@ -2,13 +2,13 @@
 
 echo "===== Installing NetworkManager"
 pacman -Syyu --noconfirm 1>/dev/null
-systemctl disable netctl &>/dev/null
-pacman -Rns --noconfirm netctl  &>/dev/null
-pacman -S networkmanager --noconfirm &>/dev/null
-systemctl enable NetworkManager &>/dev/null
+systemctl disable netctl 1>/dev/null
+pacman -Rns --noconfirm netctl  1>/dev/null
+pacman -S networkmanager --noconfirm 1>/dev/null
+systemctl enable NetworkManager 1>/dev/null
 
-#echo "===== Installing additional"
-pacman -Syy tree zip unzip nano ncdu htop 1> /dev/null
+echo "===== Installing additional"
+pacman -Syy tree zip unzip nano ncdu htop --noconfirm 1> /dev/null
 
 echo '===== Setting up clock'
 ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime

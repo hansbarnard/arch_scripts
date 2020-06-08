@@ -9,6 +9,14 @@ then
   exit 1
 fi
 
+# Check if running EFI
+if ! efibootmgr
+then
+  echo "Not running EFI! Please run installer using EFI mode"
+  exit 2
+fi
+
+
 parttab=`fdisk -l /dev/$drive | grep -i "disklabel type" | awk -F: '{print $2}'`
 
 if [ -z $parttab ]
