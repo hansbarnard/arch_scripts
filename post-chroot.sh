@@ -6,12 +6,12 @@ echo "===== Installing Intel-ucode"
 pacman -S intel-ucode --noconfirm 1>/dev/null
 
 echo "===== Installing display driver"
-lspci | grep -iq NVIDIA  && pacman nvidia --noconfirm 1>/dev/null #NVIDIA
-lspci | grep -iq innotek && pacman virtualbox-guest-utils --noconfirm 1>/dev/null #VIRTUALBOX
+lspci | grep -iq NVIDIA  && pacman -S nvidia --noconfirm 1> /dev/null #NVIDIA
+lspci | grep -iq innotek && pacman -S virtualbox-guest-utils --noconfirm 1> /dev/null #VIRTUALBOX
 
 echo "===== Installing NetworkManager"
 #systemctl disable netctl 1>/dev/null
-pacman -Rns --noconfirm netctl  1>/dev/null
+#pacman -Rns --noconfirm netctl  1>/dev/null
 pacman -S networkmanager --noconfirm 1>/dev/null
 systemctl enable NetworkManager 1>/dev/null
 pacman -S networkmanager-openconnect --noconfirm 1>/dev/null
@@ -21,7 +21,8 @@ pacman -S networkmanager-openconnect --noconfirm 1>/dev/null
 #systemctl enable gdm.service 1>/dev/null
 
 echo "===== Installing deepin"
-pacman -S deepin --noconfirm 1>/dev/null
+pacman -S gdm deepin --noconfirm 1> /dev/null
+systemctl enable gdm.service 1>/dev/null
 
 echo "===== Installing additional"
 pacman -Syy tree zip unzip nano ncdu htop --noconfirm 1> /dev/null

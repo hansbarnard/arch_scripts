@@ -10,7 +10,7 @@ then
 fi
 
 # Check if running EFI
-if ! efibootmgr
+if ! efibootmgr 1> /dev/null
 then
   echo "Not running EFI! Please run installer using EFI mode"
   exit 2
