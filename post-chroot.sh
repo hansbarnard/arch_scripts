@@ -16,6 +16,14 @@ pacman -S networkmanager --noconfirm 1>/dev/null
 systemctl enable NetworkManager 1>/dev/null
 pacman -S networkmanager-openconnect --noconfirm 1>/dev/null
 
+#echo "===== Installing gnome"
+#pacman -S gnome --noconfirm 1>/dev/null
+#systemctl enable gdm.service 1>/dev/null
+
+echo "===== Installing deepin"
+pacman -S gdm deepin deepin-editor --noconfirm 1> /dev/null
+systemctl enable gdm.service 1>/dev/null
+
 echo "===== Installing additional"
 pacman -Syy tree zip unzip nano ncdu htop git reflector --noconfirm 1> /dev/null
 
@@ -66,14 +74,6 @@ echo 'MAKEFLAGS="-j $(nproc)"' >> /etc/makepkg.conf
 echo '===== Enabling SSHD'
 systemctl enable sshd 1>/dev/null
 
-
-#echo "===== Installing gnome"
-#pacman -S gnome --noconfirm 1>/dev/null
-#systemctl enable gdm.service 1>/dev/null
-
-echo "===== Installing deepin"
-pacman -S gdm deepin gnome-terminal deepin-editor --noconfirm 1> /dev/null
-systemctl enable gdm.service 1>/dev/null
 
 echo "===== Installing as user"
 #./user-install.sh
