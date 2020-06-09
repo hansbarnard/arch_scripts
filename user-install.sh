@@ -1,5 +1,6 @@
 #!/bin/bash
 
+su hansbarnard
 
 echo "===== Installing yay"
 cd /tmp
@@ -9,7 +10,8 @@ makepkg -si 1> /dev/null
 cd ~/
 
 echo "===== Installing google-chome"
-yay -S google-chrome --noconfirm 1> /dev/null
+yay -Sy google-chrome --noconfirm 1> /dev/null
 
 
 
+exit

@@ -72,8 +72,11 @@ systemctl enable sshd 1>/dev/null
 #systemctl enable gdm.service 1>/dev/null
 
 echo "===== Installing deepin"
-pacman -S gdm deepin gnome-terminal deepin-editor xed --noconfirm 1> /dev/null
+pacman -S gdm deepin gnome-terminal deepin-editor --noconfirm 1> /dev/null
 systemctl enable gdm.service 1>/dev/null
+
+echo "===== Installing as user"
+#./user-install.sh
 
 echo "===== Exiting from chroot"
 
