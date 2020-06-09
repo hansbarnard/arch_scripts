@@ -3,11 +3,11 @@
 pacman -Syyu --noconfirm 1>/dev/null
 
 echo "===== Installing Intel-ucode"
-#pacman -S intel-ucode --noconfirm 1>/dev/null
+pacman -S intel-ucode --noconfirm 1>/dev/null
 
 echo "===== Installing display driver"
-#lspci | grep -iq NVIDIA  && pacman -S nvidia --noconfirm 1> /dev/null #NVIDIA
-#lspci | grep -iq innotek && pacman -S virtualbox-guest-utils --noconfirm 1> /dev/null #VIRTUALBOX
+lspci | grep -iq NVIDIA  && pacman -S nvidia --noconfirm 1> /dev/null #NVIDIA
+lspci | grep -iq innotek && pacman -S virtualbox-guest-utils --noconfirm 1> /dev/null #VIRTUALBOX
 
 echo "===== Installing NetworkManager"
 #systemctl disable netctl 1>/dev/null
@@ -58,7 +58,7 @@ echo 'timeout 3'>/boot/loader/loader.conf
 echo 'default arch'>>/boot/loader/loader.conf
 echo 'title Arch Linux Hans' > /boot/loader/entries/arch.conf
 echo 'linux /vmlinuz-linux' >> /boot/loader/entries/arch.conf
-#echo 'initrd /intel-ucode.img' >> /boot/loader/entries/arch.conf
+echo 'initrd /intel-ucode.img' >> /boot/loader/entries/arch.conf
 echo 'initrd /initramfs-linux.img' >> /boot/loader/entries/arch.conf
 echo "options root=${uuid} rw" >> /boot/loader/entries/arch.conf
 
