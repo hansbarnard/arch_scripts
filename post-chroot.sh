@@ -21,7 +21,8 @@ pacman -S networkmanager-openconnect --noconfirm 1>/dev/null
 #systemctl enable gdm.service 1>/dev/null
 
 echo "===== Installing deepin"
-pacman -S gdm deepin deepin-editor --noconfirm 1> /dev/null
+pacman -S gdm deepin --noconfirm 1> /dev/null
+#pacman -S gdm deepin deepin-editor --noconfirm 1> /dev/null
 systemctl enable gdm.service 1>/dev/null
 
 echo "===== Installing additional"
