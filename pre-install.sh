@@ -6,6 +6,7 @@ cp pacman.temp /etc/pacman.conf 1>/dev/null
 loadkeys uk
 timedatectl set-ntp true
 
+echo "===== Optimising mirror list"
 pacman -Sy reflector --noconfirm 1> /dev/null
 reflector --country France --country Germany --country "United Kingdom" --age 24 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 

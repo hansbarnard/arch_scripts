@@ -19,12 +19,6 @@ pacman -S networkmanager-openconnect --noconfirm 1>/dev/null
 echo "===== Installing additional"
 pacman -Syy tree zip unzip nano ncdu htop git reflector --noconfirm 1> /dev/null
 
-echo "===== Installing yay"
-cd /tmp
-git clone https://aur.archlinux.org/yay.git 1> /dev/null
-cd yay
-makepkg -si 1> /dev/null
-
 echo '===== Setting up clock'
 ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime
 hwclock --systohc
@@ -80,9 +74,6 @@ systemctl enable sshd 1>/dev/null
 echo "===== Installing deepin"
 pacman -S gdm deepin gnome-terminal deepin-editor xed --noconfirm 1> /dev/null
 systemctl enable gdm.service 1>/dev/null
-
-echo "===== Installing google-chome"
-yay -S google-chrome --noconfirm 1> /dev/null
 
 echo "===== Exiting from chroot"
 
