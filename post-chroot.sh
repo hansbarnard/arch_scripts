@@ -16,16 +16,14 @@ pacman -S networkmanager --noconfirm 1>/dev/null
 systemctl enable NetworkManager 1>/dev/null
 pacman -S networkmanager-openconnect --noconfirm 1>/dev/null
 
-#echo "===== Installing gnome"
-#pacman -S gnome --noconfirm 1>/dev/null
-#systemctl enable gdm.service 1>/dev/null
-
-echo "===== Installing deepin"
-pacman -S gdm deepin --noconfirm 1> /dev/null
-systemctl enable gdm.service 1>/dev/null
-
 echo "===== Installing additional"
-pacman -Syy tree zip unzip nano ncdu htop --noconfirm 1> /dev/null
+pacman -Syy tree zip unzip nano ncdu htop git reflector --noconfirm 1> /dev/null
+
+echo "===== Installing yay"
+cd /tmp
+git clone https://aur.archlinux.org/yay.git 1> /dev/null
+cd yay
+makepkg -si 1> /dev/null
 
 echo '===== Setting up clock'
 ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime
@@ -73,6 +71,18 @@ echo 'MAKEFLAGS="-j $(nproc)"' >> /etc/makepkg.conf
 
 echo '===== Enabling SSHD'
 systemctl enable sshd 1>/dev/null
+
+
+#echo "===== Installing gnome"
+#pacman -S gnome --noconfirm 1>/dev/null
+#systemctl enable gdm.service 1>/dev/null
+
+echo "===== Installing deepin"
+pacman -S gdm deepin gnome-terminal deepin-editor xed --noconfirm 1> /dev/null
+systemctl enable gdm.service 1>/dev/null
+
+echo "===== Installing google-chome"
+yay -S google-chrome --noconfirm 1> /dev/null
 
 echo "===== Exiting from chroot"
 
