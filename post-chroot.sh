@@ -10,8 +10,6 @@ lspci | grep -iq NVIDIA  && pacman -S nvidia --noconfirm 1> /dev/null #NVIDIA
 lspci | grep -iq innotek && pacman -S virtualbox-guest-utils --noconfirm 1> /dev/null #VIRTUALBOX
 
 echo "===== Installing NetworkManager"
-systemctl disable netctl 1>/dev/null
-#pacman -Rns --noconfirm netctl  1>/dev/null
 pacman -S networkmanager --noconfirm 1>/dev/null
 systemctl enable NetworkManager 1>/dev/null
 pacman -S networkmanager-openconnect --noconfirm 1>/dev/null
