@@ -1,0 +1,35 @@
+N	accerciser	# Interactive Python accessibility explorer for the GNOME desktop
+N	dconf-editor	# dconf Editor
+N	devhelp	# API documentation browser for GNOME
+N	evolution	# Manage your email, contacts and schedule
+N	five-or-more	# Remove colored balls from the board by forming lines
+N	four-in-a-row	# Make lines of the same color to win
+N	ghex	# A simple binary editor for the Gnome desktop
+N	glade	# User Interface Builder for GTK+ applications
+N	gnome-builder	# An IDE for writing GNOME-based software
+N	gnome-chess	# Play the classic two-player boardgame of chess
+N	gnome-code-assistance	# Code assistance services for GNOME
+N	gnome-devel-docs	# Developer documentation for GNOME
+N	gnome-klotski	# Slide blocks to solve the puzzle
+N	gnome-mahjongg	# Disassemble a pile of tiles by removing matching pairs
+N	gnome-mines	# Clear hidden mines from a minefield
+N	gnome-multi-writer	# Write an ISO file to multiple USB devices at once
+Y	gnome-nettool	# Graphical interface for various networking tools
+N	gnome-nibbles	# Guide a worm around a maze
+N	gnome-recipes	# Recipe management application for GNOME
+N	gnome-robots	# Avoid the robots and make them crash into each other
+N	gnome-sound-recorder	# A utility to make simple audio recording from your GNOME desktop
+N	gnome-sudoku	# Test your logic skills in this number grid puzzle
+N	gnome-taquin	# Move tiles so that they reach their places
+N	gnome-tetravex	# Complete the puzzle by matching numbered tiles
+N	gnome-todo	# Task manager for GNOME
+Y	gnome-tweaks	# Graphical interface for advanced GNOME 3 settings (Tweak Tool)
+N	gnome-usage	# GNOME application to view information about use of system resources
+N	hitori	# GTK+ application to generate and let you play games of Hitori
+N	iagno	# Dominate the board in a classic version of Reversi
+N	lightsoff	# Turn off all the lights
+N	polari	# An IRC Client for GNOME
+N	quadrapassel	# Fit falling blocks together (Tetris-like game for GNOME)
+N	swell-foop	# Clear the screen by removing groups of colored and shaped tiles
+N	sysprof	# Kernel based performance profiler
+N	tali	# Beat the odds in a poker-style dice game
