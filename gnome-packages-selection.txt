@@ -7,7 +7,7 @@ Y	file-roller	# Create and modify archives
 Y	gdm	# Display manager and login screen
 Y	gedit	# GNOME Text Editor
 Y	gnome-backgrounds	# Background images and data for GNOME
-Y	gnome-books	# Access and organize your e-books on GNOME
+N	gnome-books	# Access and organize your e-books on GNOME
 N	gnome-boxes	# Simple GNOME application to access remote or virtual systems
 Y	gnome-calculator	# GNOME Scientific calculator
 Y	gnome-calendar	# Simple and beautiful calendar application designed to perfectly fit the GNOME desktop
