@@ -36,7 +36,7 @@ Y	gnome-software	# GNOME Software Tools
 Y	gnome-system-monitor	# View current processes and monitor system state
 Y	gnome-terminal	# The GNOME Terminal Emulator
 Y	gnome-themes-extra	# Extra Themes for GNOME Applications
-Y	gnome-user-docs	# User documentation for GNOME
+N	gnome-user-docs	# User documentation for GNOME
 Y	gnome-user-share	# Easy to use user-level file sharing for GNOME
 N	gnome-video-effects	# Collection of GStreamer effects for GNOME
 N	gnome-weather	# Access current weather conditions and forecasts
