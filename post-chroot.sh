@@ -66,9 +66,6 @@ echo 'MAKEFLAGS="-j $(nproc)"' >> /etc/makepkg.conf
 echo '===== Enabling SSHD'
 systemctl enable sshd 1>/dev/null
 
-echo "===== Installing gnome"
-pacman -S gnome --noconfirm 1>/dev/null
-systemctl enable gdm.service 1>/dev/null
 
 #echo "===== Installing deepin"
 #pacman -S gdm deepin --noconfirm 1> /dev/null
@@ -76,8 +73,6 @@ systemctl enable gdm.service 1>/dev/null
 #systemctl enable gdm.service 1>/dev/null
 
 
-echo "===== Installing as user"
-./user-install.sh
 
 echo "===== Exiting from chroot"
 

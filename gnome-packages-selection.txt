@@ -1,0 +1,64 @@
+Y	baobab	# A graphical directory tree analyzer
+N	cheese	# Take photos and videos with your webcam, with fun graphical effects
+Y	eog	# Eye of Gnome: An image viewing and cataloging program
+N	epiphany	# A GNOME web browser based on the WebKit rendering engine
+Y	evince	# Document viewer (PDF, Postscript, djvu, tiff, dvi, XPS, SyncTex support with gedit, comics books (cbr,cbz,cb7 and cbt))
+Y	file-roller	# Create and modify archives
+Y	gdm	# Display manager and login screen
+Y	gedit	# GNOME Text Editor
+Y	gnome-backgrounds	# Background images and data for GNOME
+Y	gnome-books	# Access and organize your e-books on GNOME
+N	gnome-boxes	# Simple GNOME application to access remote or virtual systems
+Y	gnome-calculator	# GNOME Scientific calculator
+Y	gnome-calendar	# Simple and beautiful calendar application designed to perfectly fit the GNOME desktop
+Y	gnome-characters	# A character map application
+Y	gnome-clocks	# Clocks applications for GNOME
+Y	gnome-color-manager	# GNOME Color Profile Tools
+N	gnome-contacts	# Contacts Manager for GNOME
+Y	gnome-control-center	# GNOME's main interface to configure various aspects of the desktop
+Y	gnome-disk-utility	# Disk Management Utility for GNOME
+Y	gnome-documents	# A document manager application for GNOME
+Y	gnome-font-viewer	# A font viewer utility for GNOME
+N	gnome-getting-started-docs	# Help a new user get started in GNOME
+Y	gnome-keyring	# Stores passwords and encryption keys
+Y	gnome-logs	# A log viewer for the systemd journal
+N	gnome-maps	# A simple GNOME 3 maps application
+Y	gnome-menus	# GNOME menu specifications
+N	gnome-music	# Music player and management application
+N	gnome-photos	# Access, organize, and share your photos on GNOME
+Y	gnome-remote-desktop	# GNOME Remote Desktop server
+Y	gnome-screenshot	# Take pictures of your screen
+Y	gnome-session	# The GNOME Session Handler
+Y	gnome-settings-daemon	# GNOME Settings Daemon
+Y	gnome-shell	# Next generation desktop shell
+Y	gnome-shell-extensions	# Extensions for GNOME shell, including classic mode
+Y	gnome-software	# GNOME Software Tools
+Y	gnome-system-monitor	# View current processes and monitor system state
+Y	gnome-terminal	# The GNOME Terminal Emulator
+Y	gnome-themes-extra	# Extra Themes for GNOME Applications
+Y	gnome-user-docs	# User documentation for GNOME
+Y	gnome-user-share	# Easy to use user-level file sharing for GNOME
+N	gnome-video-effects	# Collection of GStreamer effects for GNOME
+N	gnome-weather	# Access current weather conditions and forecasts
+Y	grilo-plugins	# A collection of plugins for the Grilo framework
+Y	gvfs	# Virtual filesystem implementation for GIO
+Y	gvfs-afc	# Virtual filesystem implementation for GIO (AFC backend; Apple mobile devices)
+Y	gvfs-goa	# Virtual filesystem implementation for GIO (Gnome Online Accounts backend; cloud storage)
+Y	gvfs-google	# Virtual filesystem implementation for GIO (Google Drive backend)
+Y	gvfs-gphoto2	# Virtual filesystem implementation for GIO (gphoto2 backend; PTP camera, MTP media player)
+Y	gvfs-mtp	# Virtual filesystem implementation for GIO (MTP backend; Android, media player)
+Y	gvfs-nfs	# Virtual filesystem implementation for GIO (NFS backend)
+Y	gvfs-smb	# Virtual filesystem implementation for GIO (SMB/CIFS backend; Windows client)
+Y	mutter	# A window manager for GNOME
+Y	nautilus	# Default file manager for GNOME
+Y	networkmanager	# Network connection manager and user applications
+Y	orca	# Screen reader for individuals who are blind or visually impaired
+Y	rygel	# UPnP AV MediaServer and MediaRenderer that allows you to easily share audio, video and pictures, and control of media player on your home network
+Y	simple-scan	# Simple scanning utility
+Y	sushi	# A quick previewer for Nautilus
+Y	totem	# Movie player for the GNOME desktop based on GStreamer
+Y	tracker	# Desktop-neutral user information store, search tool and indexer
+Y	tracker-miners	# Collection of data extractors for Tracker/Nepomuk
+Y	vino	# A VNC server for the GNOME desktop
+Y	xdg-user-dirs-gtk	# Creates user dirs and asks to relocalize them
+Y	yelp	# Get help with GNOME
