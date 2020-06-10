@@ -10,7 +10,16 @@ makepkg -si --noconfirm 1> /dev/null
 cd ~/
 
 echo "===== Installing google-chome"
-yay -Sy google-chrome --noconfirm 1> /dev/null
+yay -Sy google-chrome --noconfirm --answerclean No --nodiffmenu  1> /dev/null
+
+echo =======Install SDKMan
+yay -Sqy sdkman --noconfirm --answerclean No --nodiffmenu 1> /dev/null
+
+echo =======Install java
+sdk install java 8.0.252-open
+
+echo =======Install timeshift
+yay -Sqy timeshift --noconfirm --answerclean No --nodiffmenu 1> /dev/null
 
 
 EOSU

@@ -15,7 +15,7 @@ systemctl enable NetworkManager 1>/dev/null
 pacman -S networkmanager-openconnect --noconfirm 1>/dev/null
 
 echo "===== Installing additional"
-pacman -Syy tree zip unzip nano ncdu htop git reflector --noconfirm 1> /dev/null
+pacman -Sqyy tree zip unzip nano ncdu htop git reflector privoxy --noconfirm 1> /dev/null
 
 echo '===== Setting up clock'
 ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime
@@ -70,6 +70,13 @@ systemctl enable sshd 1>/dev/null
 #pacman -S gdm deepin deepin-editor --noconfirm 1> /dev/null
 #systemctl enable gdm.service 1>/dev/null
 
+echo '=====Install docker'
+pacman -Sq docker docker-compose --noconfirm 1>/dev/null
+systemctl enable docker.service 1>/dev/null
+usermod -a -G docker $USER_NAME
+
+echo '=====Install aws-cli'
+pacman -Sq aws-cli --noconfirm 1>/dev/null
 
 
 echo "===== Exiting from chroot"
