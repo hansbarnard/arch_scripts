@@ -56,7 +56,7 @@ Y	orca	# Screen reader for individuals who are blind or visually impaired
 Y	rygel	# UPnP AV MediaServer and MediaRenderer that allows you to easily share audio, video and pictures, and control of media player on your home network
 Y	simple-scan	# Simple scanning utility
 Y	sushi	# A quick previewer for Nautilus
-Y	totem	# Movie player for the GNOME desktop based on GStreamer
+N	totem	# Movie player for the GNOME desktop based on GStreamer
 Y	tracker	# Desktop-neutral user information store, search tool and indexer
 Y	tracker-miners	# Collection of data extractors for Tracker/Nepomuk
 Y	vino	# A VNC server for the GNOME desktop
