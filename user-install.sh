@@ -1,6 +1,6 @@
 #!/bin/bash
 
-su hansbarnard
+su hansbarnard <<EOSU
 
 echo "===== Installing yay"
 cd /tmp
@@ -12,6 +12,4 @@ cd ~/
 echo "===== Installing google-chome"
 yay -Sy google-chrome --noconfirm 1> /dev/null
 
-
-
-exit
+EOSU
