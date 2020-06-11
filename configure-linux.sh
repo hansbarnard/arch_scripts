@@ -16,5 +16,5 @@ echo "===== Installing gnome"
 arch-chroot /mnt /scripts/install-gnome.sh
 
 echo "===== Installing as user"
-arch-chroot /mnt /scripts/user-install.sh
+arch-chroot /mnt su - hansbarnard -c /scripts/user-install.sh
 

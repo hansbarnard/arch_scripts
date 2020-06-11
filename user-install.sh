@@ -1,7 +1,5 @@
 #!/bin/bash
 
-su - hansbarnard <<EOSU
-
 echo =======Install SDKMan
 curl -s "https://get.sdkman.io" | bash  &> /dev/null
 source "$HOME/.sdkman/bin/sdkman-init.sh" &> /dev/null
@@ -42,4 +40,3 @@ echo ===== Install aws-azure-login
 yay -Sqy aws-azure-login --noconfirm --answerclean No --nodiffmenu &> /dev/null
 
 
-EOSU
