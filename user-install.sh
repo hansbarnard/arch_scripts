@@ -36,7 +36,7 @@ yay -Sqy onedrive-abraunegg --noconfirm --answerclean No --nodiffmenu &> /dev/nu
 
 
 echo ===== Install timeshift
-yay -Sqy timeshift --noconfirm --answerclean No --nodiffmenu &> /dev/null
+yay -Sqy cronie timeshift --noconfirm --answerclean No --nodiffmenu &> /dev/null
 
 echo ===== Install aws-azure-login
 yay -Sqy aws-azure-login --noconfirm --answerclean No --nodiffmenu &> /dev/null

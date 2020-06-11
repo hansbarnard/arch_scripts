@@ -19,3 +19,6 @@ rm -f /usr/share/applications/stoken-gui-small
 rm -f /usr/share/applications/qv4l2.desktop
 rm -f /usr/share/applications/qvidcap.desktop
 
+echo "===== Installing deepin"
+pacman -S deepin deepin-editor --noconfirm 1> /dev/null
+
