@@ -1,6 +1,6 @@
 #!/bin/bash
 
-su hansbarnard <<EOSU
+su - hansbarnard <<EOSU
 
 echo =======Install SDKMan
 curl -s "https://get.sdkman.io" | bash  &> /dev/null
