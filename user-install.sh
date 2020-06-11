@@ -20,9 +20,6 @@ cd ~/
 echo "===== Installing google-chome"
 yay -Sy google-chrome --noconfirm --answerclean No --nodiffmenu  &> /dev/null
 
-echo "===== Installing postman"
-yay -Sy postman --noconfirm --answerclean No --nodiffmenu  &> /dev/null
-
 echo "===== Installing teams"
 yay -Sy teams --noconfirm --answerclean No --nodiffmenu  &> /dev/null
 

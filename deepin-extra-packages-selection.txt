@@ -1,0 +1,15 @@
+Y	deepin-album	# A fashion photo manager for viewing and organizing pictures
+Y	deepin-boot-maker	# Tool to create a bootable usb stick quick and easy
+Y	deepin-calculator	# An easy to use calculator for ordinary users
+Y	deepin-clone	# Disk and partition backup/restore tool
+Y	deepin-community-wallpapers	# Community wallpapers for DDE
+Y	deepin-draw	# A lightweight drawing tool for Linux Deepin
+Y	deepin-editor	# Simple editor for Deepin
+Y	deepin-movie	# Movie player based on QtAV
+Y	deepin-music	# Awesome music player with brilliant and tweakful UI Deepin-UI based.
+Y	deepin-picker	# Color picker tool for deepin
+Y	deepin-reader	# A simple PDF reader, supporting bookmarks, highlights and annotations
+Y	deepin-screen-recorder	# Deepin Screen Recorder
+Y	deepin-screensaver-pp	# Optional PP screensaver resource for deepin screensaver
+Y	deepin-screenshot	# Easy-to-use screenshot tool for linuxdeepin desktop environment
+Y	deepin-terminal	# Default terminal emulation application for Deepin

@@ -17,6 +17,11 @@ systemctl enable NetworkManager 1>/dev/null
 echo "===== Installing additional"
 pacman -Sqyy tree zip unzip nano ncdu htop git reflector privoxy --noconfirm 1> /dev/null
 
+echo "===== Installing all fonts"
+pacman -Sqyy all-repository-fonts --noconfirm 1> /dev/null
+
+
+
 echo '===== Setting up clock'
 ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime
 hwclock --systohc
