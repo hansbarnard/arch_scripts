@@ -1,13 +1,13 @@
 #!/bin/bash
 
 echo "===== Installing gnome"
-selected_packages=$(grep -i $'^Y\s' /scripts/gnome-packages-selection.txt | awk -v ORS=' ' -F'\t' '{print $2}' )
+selected_packages=$(grep -i $'^Y\s' /scripts/gnome/gnome-packages-selection.txt | awk -v ORS=' ' -F'\t' '{print $2}' )
 pacman -S $selected_packages --noconfirm 1>/dev/null
 systemctl enable gdm.service 1>/dev/null
 
 echo "===== Installing gnome extra"
-selected_extra_packages=$(grep -i $'^Y\s' /scripts/gnome-extra-packages-selection.txt | awk -v ORS=' ' -F'\t' '{print $2}' )
-pacman -S $selected_extra_packages --noconfirm 1>/dev/null
+selected_extra_packages=$(grep -i $'^Y\s' /scripts/gnome/gnome-extra-packages-selection.txt | awk -v ORS=' ' -F'\t' '{print $2}' )
+pacman -S $selected_extra_packages galculator gnomeExtensions.caffeine --noconfirm 1>/dev/null
 
 
 rm -f /usr/share/applications/avahi-discover.desktop
@@ -19,6 +19,5 @@ rm -f /usr/share/applications/stoken-gui-small
 rm -f /usr/share/applications/qv4l2.desktop
 rm -f /usr/share/applications/qvidcap.desktop
 
-echo "===== Installing deepin"
-pacman -S deepin deepin-editor --noconfirm 1> /dev/null
+
 

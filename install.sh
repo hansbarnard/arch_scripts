@@ -7,26 +7,26 @@ then
   exit 1
 fi
 
-if ! ./pre-install.sh
+if ! ./isoroot/pre-install.sh
 then
   echo "===== Initialization failed. Exiting..."
   exit 1
 fi
 
 
-if ! ./create-partitions.sh $drive
+if ! ./isoroot/partitions-install.sh $drive
 then
   echo "===== Creating partitions failed. Exiting..."
   exit 1
 fi
 
-if ! ./install-linux.sh $drive
+if ! ./isoroot/linux-install.sh $drive
 then
   echo "===== Install failed. Exiting..."
   exit 1
 fi
 
-if ! ./configure-linux.sh
+if ! ./chroot-install.sh
 then
   echo "===== Configure failed. Exiting..."
   exit 1

@@ -1,9 +1,10 @@
 #!/bin/bash
 
 echo "===== Installing nix"
-curl -L https://nixos.org/nix/install | sh
+curl -L https://nixos.org/nix/install | sh 2> /dev/null
 . /home/hansbarnard/.nix-profile/etc/profile.d/nix.sh
 
+nix-env -i micro --quiet
 
 echo =======Install SDKMan
 curl -s "https://get.sdkman.io" | bash  &> /dev/null
@@ -22,6 +23,10 @@ makepkg -si --noconfirm &> /dev/null
 yay --version
 cd ~/
 
+echo "===== Installing all fonts"
+yay -Sy all-repository-fonts --noconfirm --answerclean No --nodiffmenu  &> /dev/null
+
+
 echo "===== Installing google-chome"
 yay -Sy google-chrome --noconfirm --answerclean No --nodiffmenu  &> /dev/null
 
@@ -38,4 +43,8 @@ yay -Sqy onedrive-abraunegg --noconfirm --answerclean No --nodiffmenu &> /dev/nu
 echo ===== Install aws-azure-login
 yay -Sqy aws-azure-login --noconfirm --answerclean No --nodiffmenu &> /dev/null
 
+echo ===== Install amazon-workspacesclient
+yay -Sqy amazon-workspacesclient --noconfirm --answerclean No --nodiffmenu &> /dev/null
+
+echo "===== Exiting from user install"
 
