@@ -15,7 +15,10 @@ systemctl enable NetworkManager 1>/dev/null
 
 
 echo "===== Installing additional"
-pacman -Sqyy tree zip unzip nano ncdu htop git reflector privoxy --noconfirm 1> /dev/null
+pacman -Sqyy tree zip unzip micro ncdu htop git reflector privoxy --noconfirm 1> /dev/null
+
+echo "===== Installing nix"
+curl -L https://nixos.org/nix/install | sh
 
 echo "===== Installing all fonts"
 pacman -Sqyy all-repository-fonts --noconfirm 1> /dev/null
@@ -69,11 +72,6 @@ echo 'MAKEFLAGS="-j $(nproc)"' >> /etc/makepkg.conf
 echo '===== Enabling SSHD'
 systemctl enable sshd 1>/dev/null
 
-
-#echo "===== Installing deepin"
-#pacman -S gdm deepin --noconfirm 1> /dev/null
-#pacman -S gdm deepin deepin-editor --noconfirm 1> /dev/null
-#systemctl enable gdm.service 1>/dev/null
 
 echo '=====Install docker'
 pacman -Sq docker docker-compose --noconfirm 1>/dev/null
