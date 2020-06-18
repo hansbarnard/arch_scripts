@@ -5,7 +5,7 @@ cp -R "`dirname "$0"`/chroot" /mnt/scripts
 cp font.txt /mnt/scripts 1>/dev/null
 
 echo "===== Calling root configure"
-arch-chroot /mnt /scripts/proot-configure.sh
+arch-chroot /mnt /scripts/root-configure.sh
 
 echo "===== Calling root install"
 arch-chroot /mnt /scripts/root-install.sh
