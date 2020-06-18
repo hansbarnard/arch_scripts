@@ -1,13 +1,13 @@
 #!/bin/bash
 
-echo "===== Installing gnome"
+echo "===== Installing gnome packages selected"
 selected_packages=$(grep -i $'^Y\s' /scripts/gnome/gnome-packages-selection.txt | awk -v ORS=' ' -F'\t' '{print $2}' )
-pacman -S $selected_packages --noconfirm 1>/dev/null
+pacman -S $selected_packages --needed --noconfirm 1>/dev/null
 systemctl enable gdm.service 1>/dev/null
 
 echo "===== Installing gnome extra"
 selected_extra_packages=$(grep -i $'^Y\s' /scripts/gnome/gnome-extra-packages-selection.txt | awk -v ORS=' ' -F'\t' '{print $2}' )
-pacman -S $selected_extra_packages galculator gnomeExtensions.caffeine --noconfirm 1>/dev/null
+pacman -S $selected_extra_packages galculator --needed --noconfirm 1>/dev/null
 
 
 rm -f /usr/share/applications/avahi-discover.desktop

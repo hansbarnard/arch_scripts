@@ -1,10 +1,11 @@
 #!/bin/bash
 
 echo "===== Installing nix"
-curl -L https://nixos.org/nix/install | sh 2> /dev/null
+curl -s -L https://nixos.org/nix/install | sh 2> /dev/null
 . /home/hansbarnard/.nix-profile/etc/profile.d/nix.sh
 
-nix-env -i micro --quiet
+echo "===== Installing micro and caffeine"
+nix-env -i micro gnomeExtensions.caffeine --quiet
 
 echo =======Install SDKMan
 curl -s "https://get.sdkman.io" | bash  &> /dev/null

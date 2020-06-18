@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export USER_NAME=hansbarnard
+
 drive=$1
 if [ -z "$drive" ]
 then

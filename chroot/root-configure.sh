@@ -46,7 +46,6 @@ echo "options root=${uuid} rw" >> /boot/loader/entries/arch.conf
 
 echo "===== Setting up accounts"
 echo "root:changeme" | chpasswd
-USER_NAME=hansbarnard
 useradd -m "$USER_NAME"
 echo "$USER_NAME:changeme" | chpasswd
 echo "$USER_NAME ALL=(ALL) NOPASSWD: ALL">"/etc/sudoers.d/$USER_NAME"
