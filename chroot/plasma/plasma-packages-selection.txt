@@ -1,0 +1,35 @@
+Y	bluedevil	Integrate the Bluetooth technology within KDE workspace and applications
+Y	breeze	Artwork, styles and assets for the Breeze visual style for the Plasma Desktop
+Y	breeze-gtk	Breeze widget theme for GTK 2 and 3
+Y	discover	KDE and Plasma resources management GUI
+Y	drkonqi	The KDE crash handler
+N	kactivitymanagerd	System service to manage user's activities and track the usage patterns
+Y	kde-cli-tools	Tools based on KDE Frameworks 5 to better interact with the system
+Y	kde-gtk-config	GTK2 and GTK3 Configurator for KDE
+Y	kdecoration	Plugin based library to create window decorations
+Y	kdeplasma-addons	All kind of addons to improve your Plasma experience
+Y	kgamma5	Adjust your monitor's gamma settings
+Y	khotkeys	KHotKeys
+Y	kinfocenter	A utility that provides information about a computer system
+Y	kscreenlocker	Library and components for secure lock screen architecture
+Y	ksshaskpass	ssh-add helper that uses kwallet and kpassworddialog
+Y	kwallet-pam	KWallet PAM integration
+Y	kwayland-integration	Provides integration plugins for various KDE frameworks for the wayland windowing system
+Y	kwayland-server	Wayland server components built on KDE Frameworks
+Y	kwin	An easy to use, but flexible, composited Window Manager
+Y	kwrited	KDE daemon listening for wall and write messages
+Y	libkscreen	KDE screen management software
+Y	libksysguard	Library to retrieve information on the current status of computer hardware
+Y	milou	A dedicated search application built on top of Baloo
+Y	oxygen	KDE Oxygen style
+Y	plasma-browser-integration	Components necessary to integrate browsers into the Plasma Desktop
+Y	plasma-integration	Qt Platform Theme integration plugins for the Plasma workspaces
+Y	plasma-pa	Plasma applet for audio volume management using PulseAudio
+Y	plasma-sdk	Applications useful for Plasma development
+Y	plasma-thunderbolt	Plasma integration for controlling Thunderbolt devices
+Y	plasma-vault	Plasma applet and services for creating encrypted vaults
+Y	plasma-workspace	KDE Plasma Workspace
+Y	plasma-workspace-wallpapers	Additional wallpapers for the Plasma Workspace
+Y	sddm-kcm	KDE Config Module for SDDM
+Y	user-manager	A simple system settings module to manage the users of your system
+Y	xdg-desktop-portal-kde	A backend implementation for xdg-desktop-portal using Qt/KF5

@@ -16,6 +16,9 @@ arch-chroot /mnt /scripts/gnome/install-gnome.sh
 echo "===== Installing deepin"
 arch-chroot /mnt /scripts/deepin/install-deepin.sh
 
+echo "===== Installing plasma"
+arch-chroot /mnt /scripts/plasma/install-plasma.sh
+
 echo "===== Installing as user"
 arch-chroot /mnt su - hansbarnard -c /scripts/user-install.sh
 
