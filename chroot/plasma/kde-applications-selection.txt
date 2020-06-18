@@ -1,0 +1,166 @@
+N	akonadi-calendar-tools	CLI tools to manage akonadi calendars
+N	akonadi-import-wizard	Import data from other mail clients to KMail
+N	akonadiconsole	Akonadi management and debugging console
+N	akregator	A Feed Reader by KDE
+N	ark	Archiving Tool
+N	artikulate	Improve your pronunciation by listening to native speakers
+N	audiocd-kio	Kioslave for accessing audio CDs
+N	blinken	Memory Enhancement Game
+N	bomber	A single player arcade game
+N	bovo	A Gomoku like game for two players
+N	cantor	KDE Frontend to Mathematical Software
+N	cervisia	CVS Frontend
+Y	dolphin	KDE File Manager
+Y	dolphin-plugins	Extra Dolphin plugins
+N	dragon	A multimedia player where the focus is on simplicity, instead of features
+N	elisa	A simple music player aiming to provide a nice experience for its users
+N	ffmpegthumbs	FFmpeg-based thumbnail creator for video files
+Y	filelight	View disk usage information
+N	granatier	A clone of the classic Bomberman game
+Y	grantlee-editor	Editor for Grantlee themes
+Y	gwenview	A fast and easy to use image viewer
+N	juk	A jukebox, tagger and music collection manager
+N	k3b	Feature-rich and easy to handle CD burning application
+Y	kaccounts-integration	Small system to administer web accounts for the sites and services across the KDE desktop, including: Google, Facebook, Owncloud, IMAP, Jabber and others
+N	kaccounts-providers	Small system to administer web accounts for the sites and services across the KDE desktop, including: Google, Facebook, Owncloud, IMAP, Jabber and others
+N	kaddressbook	KDE contact manager
+N	kajongg	The ancient Chinese board game for 4 players
+N	kalarm	Personal alarm scheduler
+N	kalgebra	Graph Calculator
+N	kalzium	Periodic Table of Elements
+N	kamera	KDE integration for gphoto2 cameras
+N	kamoso	A webcam recorder from KDE community
+N	kanagram	Letter Order Game
+N	kapman	A clone of the well known game Pac-Man
+N	kapptemplate	KDE Template Generator
+Y	kate	Advanced Text Editor
+N	katomic	A fun and educational game built around molecular geometry
+N	kbackup	A program that lets you back up any directories or files
+N	kblackbox	A game of hide and seek played on a grid of boxes
+N	kblocks	The classic falling blocks game
+N	kbounce	A single player arcade game with the elements of puzzle
+N	kbreakout	A Breakout-like game
+N	kbruch	Exercise Fractions
+N	kcachegrind	Visualization of Performance Profiling Data
+Y	kcalc	Scientific Calculator
+Y	kcharselect	Character Selector
+N	kcolorchooser	Color Chooser
+Y	kcron	Configure and schedule tasks
+N	kde-dev-scripts	Scripts and setting files useful during development of KDE software
+N	kde-dev-utils	Small utilities for developers using KDE/Qt libs/frameworks
+N	kdebugsettings	An application to enable/disable qCDebug
+N	kdeconnect	Adds communication between KDE and your smartphone
+N	kdegraphics-mobipocket	A collection of plugins to handle mobipocket files
+N	kdegraphics-thumbnailers	Thumbnailers for various graphics file formats
+N	kdenetwork-filesharing	Properties dialog plugin to share a directory with the local network
+N	kdenlive	A non-linear video editor for Linux using the MLT video framework
+N	kdepim-addons	Addons for KDE PIM applications
+N	kdesdk-kioslaves	KDE SDK KIO-Slaves
+N	kdesdk-thumbnailers	Plugins for the thumbnailing system
+Y	kdf	View Disk Usage
+N	kdialog	A utility for displaying dialog boxes from shell scripts
+N	kdiamond	A single player puzzle game
+N	keditbookmarks	Bookmark Organizer and Editor
+Y	kfind	Find Files/Folders
+N	kfloppy	Floppy Formatter
+N	kfourinline	A four-in-a-row game
+N	kgeography	Geography Trainer
+N	kget	Download Manager
+N	kgoldrunner	A game of action and puzzle solving
+Y	kgpg	A GnuPG frontend
+N	khangman	Hangman Game
+N	khelpcenter	Application to show KDE Applications' documentation
+N	kig	Interactive Geometry
+N	kigo	An open-source implementation of the popular Go game
+N	killbots	A simple game of evading killer robots
+N	kimagemapeditor	HTML Image Map Editor
+N	kio-extras	Additional components to increase the functionality of KIO
+N	kipi-plugins	A collection of plugins extending the KDE graphics and image applications
+N	kirigami-gallery	Gallery application built using Kirigami
+N	kiriki	An addictive and fun dice game
+N	kiten	Japanese Reference/Study Tool
+N	kjumpingcube	A simple tactical game
+Y	kleopatra	Certificate Manager and Unified Crypto GUI
+N	klettres	Learn The Alphabet
+N	klickety	An adaptation of the Clickomania game
+N	klines	A simple but highly addictive one player game
+Y	kmag	Screen Magnifier
+N	kmahjongg	A tile matching game for one or two players
+N	kmail	KDE mail client
+N	kmail-account-wizard	KMail account wizard
+N	kmines	The classic Minesweeper game
+Y	kmix	KDE volume control program
+N	kmousetool	Clicks the mouse for you, reducing the effects of RSI
+N	kmouth	Speech Synthesizer Frontend
+N	kmplot	Mathematical Function Plotter
+N	knavalbattle	A ship sinking game
+N	knetwalk	Connect all the terminals to the server, in as few turns as possible
+N	knights	Chess board by KDE with XBoard protocol support
+N	knotes	Popup notes
+N	kolf	A miniature golf game with 2d top-down view
+N	kollision	A simple ball dodging game
+N	kolourpaint	Paint Program
+N	kompare	Graphical file differences tool
+N	konqueror	KDE File Manager & Web Browser
+N	konquest	The KDE version of Gnu-Lactic
+y	konsole	KDE's terminal emulator
+N	kontact	KDE Personal Information Manager
+N	kopete	Instant Messenger
+N	korganizer	Calendar and scheduling Program
+N	kpatience	Offers a selection of solitaire card games
+N	krdc	Remote Desktop Client
+N	kreversi	A simple one player strategy game played against the computer
+N	krfb	Desktop Sharing
+N	kross-interpreters	Language interpreters to enable in-process scripting with Kross
+N	kruler	Screen Ruler
+N	kshisen	A solitaire-like game played using the standard set of Mahjong tiles
+N	ksirk	A computerized version of a well known strategy game
+N	ksnakeduel	A simple snake duel game
+N	kspaceduel	Each of two possible players controls a satellite spaceship orbiting the sun
+N	ksquares	A game modeled after the well known pen and paper based game of Dots and Boxes
+N	ksudoku	A logic-based symbol placement puzzle
+Y	ksystemlog	System log viewer tool
+N	kteatime	A handy timer for steeping tea
+Y	ktimer	Countdown Launcher
+N	ktouch	Touch Typing Tutor
+N	ktuberling	A simple constructor game suitable for children and adults alike
+N	kturtle	Educational Programming Environment
+N	kubrick	Based on the famous Rubik's Cube
+y	kwalletmanager	Wallet management tool
+N	kwave	A sound editor for KDE
+N	kwordquiz	Flash Card Trainer
+Y	kwrite	Text Editor
+N	lokalize	Computer-Aided Translation System
+N	lskat	Lieutenant Skat is a fun and engaging card game for two players
+N	marble	Desktop Globe
+N	mbox-importer	Import mbox files to KMail
+N	minuet	A KDE Software for Music Education
+N	okular	Document Viewer
+N	palapeli	A single-player jigsaw puzzle game
+N	parley	Vocabulary Trainer
+N	picmi	A nonogram logic game for KDE
+N	pim-data-exporter	Import and export KDE PIM settings
+N	pim-sieve-editor	Mail sieve editor
+N	poxml	Translates DocBook XML files using gettext po files
+y	print-manager	A tool for managing print jobs and printers
+N	rocs	Graph Theory IDE
+N	signon-kwallet-extension	KWallet integration for signon framework
+Y	spectacle	KDE screenshot capture utility
+N	step	Interactive Physical Simulator
+N	svgpart	A KPart for viewing SVGs
+Y	sweeper	System Cleaner
+N	telepathy-kde-accounts-kcm	KCM Module for configuring Telepathy Instant Messaging Accounts
+N	telepathy-kde-approver	KDE Channel Approver for Telepathy
+N	telepathy-kde-auth-handler	Provide UI/KWallet Integration For Passwords and SSL Errors on Account Connect
+N	telepathy-kde-call-ui	Voice/Video Call UI for Telepathy
+N	telepathy-kde-common-internals	Common components for KDE-Telepathy
+N	telepathy-kde-contact-list	KDE Telepathy contact list application
+N	telepathy-kde-contact-runner	KRunner plugin for KDE Telepathy
+N	telepathy-kde-desktop-applets	The KDE-Telepathy Plasma desktop applets
+N	telepathy-kde-filetransfer-handler	KDE Telepathy file transfer handler
+N	telepathy-kde-integration-module	Sits in KDED and takes care of various bits of system integration like setting user to auto-away or handling connection errors
+N	telepathy-kde-send-file	A File manager plugin to launch a file transfer job with a specified contact
+N	telepathy-kde-text-ui	Telepathy handler for Text Chats
+N	umbrello	UML modeller
+Y	yakuake	A drop-down terminal emulator based on KDE konsole technology
+N	zeroconf-ioslave	Network Monitor for DNS-SD services (Zeroconf)
