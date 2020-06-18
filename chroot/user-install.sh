@@ -41,9 +41,6 @@ echo ===== Install OneDrive
 yay -Sqy onedrive-abraunegg --noconfirm --answerclean No --nodiffmenu &> /dev/null
 
 
-echo ===== Install aws-azure-login
-yay -Sqy aws-azure-login --noconfirm --answerclean No --nodiffmenu &> /dev/null
-
 echo ===== Install amazon-workspacesclient
 yay -Sqy amazon-workspacesclient --noconfirm --answerclean No --nodiffmenu &> /dev/null
 

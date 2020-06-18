@@ -32,5 +32,9 @@ pacman -Sq dbeaver --noconfirm 1>/dev/null
 echo '=====Install intellij-idea-community-edition'
 pacman -Sq intellij-idea-community-edition --noconfirm 1>/dev/null
 
+echo ===== Install aws-azure-login
+curl -o /usr/local/bin/aws-azure-login https://raw.githubusercontent.com/sportradar/aws-azure-login/master/docker-launch.sh
+chmod o+x /usr/local/bin/aws-azure-login
+
 echo "===== Exiting from root install"
 
