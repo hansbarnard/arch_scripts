@@ -1,5 +1,10 @@
 #!/bin/bash
 
+echo "===== Installing nix"
+curl -L https://nixos.org/nix/install | sh
+. /home/hansbarnard/.nix-profile/etc/profile.d/nix.sh
+
+
 echo =======Install SDKMan
 curl -s "https://get.sdkman.io" | bash  &> /dev/null
 source "$HOME/.sdkman/bin/sdkman-init.sh" &> /dev/null

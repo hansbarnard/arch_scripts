@@ -15,14 +15,10 @@ systemctl enable NetworkManager 1>/dev/null
 
 
 echo "===== Installing additional"
-pacman -Sqyy tree zip unzip micro ncdu htop git reflector privoxy --noconfirm 1> /dev/null
-
-echo "===== Installing nix"
-curl -L https://nixos.org/nix/install | sh
+pacman -Sqyy tree zip unzip nano ncdu htop git reflector privoxy --noconfirm 1> /dev/null
 
 echo "===== Installing all fonts"
 pacman -Sqyy all-repository-fonts --noconfirm 1> /dev/null
-
 
 
 echo '===== Setting up clock'
