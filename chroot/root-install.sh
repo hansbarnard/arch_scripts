@@ -8,6 +8,9 @@ systemctl enable NetworkManager 1>/dev/null
 echo "===== Installing additional"
 pacman -Sqyy tree zip unzip ncdu htop git reflector privoxy --noconfirm 1> /dev/null
 
+echo '=====Install bluetooth'
+pacman -Sq bluez bluez-utils --noconfirm 1>/dev/null
+systemctl enable bluetooth.service 1>/dev/null
 
 echo '=====Install docker'
 pacman -Sq docker docker-compose --noconfirm 1>/dev/null
@@ -21,7 +24,7 @@ echo '=====Install nodejs npm'
 pacman -Sq nodejs npm --noconfirm 1>/dev/null
 
 echo '=====Install virtualbox'
-pacman -Sq virtualbox --noconfirm 1>/dev/null
+pacman -Sq virtualbox virtualbox-host-modules-arch virtualbox-guest-iso --noconfirm 1>/dev/null
 
 echo '=====Install keybase'
 pacman -Sq keybase --noconfirm 1>/dev/null

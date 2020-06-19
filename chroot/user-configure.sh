@@ -1,7 +1,5 @@
 #!/bin/bash
 
-su hansbarnard <<EOSU
-
 echo ===== Configure and synchronize OneDrive
 onedrive --synchronize
 systemctl --user enable onedrive
@@ -9,6 +7,7 @@ systemctl --user start onedrive
 systemctl --user status onedrive
 
 echo ===== Configure ssh
+cd ~/
 tar -zxf ~/OneDrive/Pop_OS/sshconfig.tar.gz
 
 echo ===== Configure aws cli
@@ -23,9 +22,6 @@ sudo cp ~/OneDrive/Pop_OS/privoxy/config /etc/privoxy/
 echo ===== Create code dir
 mkdir ~/code
 cd ~/code
-
-echo ===== Start VPN connection
-sudo openconnect --servercert pin-sha256:rby4MfqHAKveAOKiSdyw6tvoxp3wUk0bZGJA0zjxsGw= -b "CLV-EMEA.clarivate.com"
 
 echo ===== Clone all repos
 git clone ssh://git@git.clarivate.io/sp/1p-kafka-engine.git
@@ -51,7 +47,9 @@ git clone http://johannes.barnard@eiddo.dev.oneplatform.build/r/1pzuulfiltermaps
 git clone http://johannes.barnard@eiddo.dev.oneplatform.build/r/1pcommon.git
 
 git clone https://github.com/csi-lk/aws-ses-local.git
-git clone https://github.com/hansbarnard/pop_os_helper.git
+git clone git@github.com:hansbarnard/pop_os_helper.git
+git clone git@github.com:hansbarnard/arch_scripts.git
+git clone git@github.com:hansbarnard/nixos_config.git
 
 echo =======Success!!!!!!!
 
