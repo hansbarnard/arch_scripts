@@ -57,7 +57,7 @@ N	kdenlive	A non-linear video editor for Linux using the MLT video framework
 N	kdepim-addons	Addons for KDE PIM applications
 N	kdesdk-kioslaves	KDE SDK KIO-Slaves
 N	kdesdk-thumbnailers	Plugins for the thumbnailing system
-Y	kdf	View Disk Usage
+N	kdf	View Disk Usage
 N	kdialog	A utility for displaying dialog boxes from shell scripts
 N	kdiamond	A single player puzzle game
 N	keditbookmarks	Bookmark Organizer and Editor
@@ -67,7 +67,7 @@ N	kfourinline	A four-in-a-row game
 N	kgeography	Geography Trainer
 N	kget	Download Manager
 N	kgoldrunner	A game of action and puzzle solving
-Y	kgpg	A GnuPG frontend
+N	kgpg	A GnuPG frontend
 N	khangman	Hangman Game
 N	khelpcenter	Application to show KDE Applications' documentation
 N	kig	Interactive Geometry
@@ -126,7 +126,7 @@ N	ktouch	Touch Typing Tutor
 N	ktuberling	A simple constructor game suitable for children and adults alike
 N	kturtle	Educational Programming Environment
 N	kubrick	Based on the famous Rubik's Cube
-y	kwalletmanager	Wallet management tool
+Y	kwalletmanager	Wallet management tool
 N	kwave	A sound editor for KDE
 N	kwordquiz	Flash Card Trainer
 Y	kwrite	Text Editor

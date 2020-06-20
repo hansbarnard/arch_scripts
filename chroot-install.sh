@@ -13,8 +13,8 @@ arch-chroot /mnt /scripts/root-install.sh
 echo "===== Installing gnome"
 arch-chroot /mnt /scripts/gnome/install-gnome.sh
 
-echo "===== Installing deepin"
-arch-chroot /mnt /scripts/deepin/install-deepin.sh
+#echo "===== Installing deepin"
+#arch-chroot /mnt /scripts/deepin/install-deepin.sh
 
 echo "===== Installing plasma"
 arch-chroot /mnt /scripts/plasma/install-plasma.sh
