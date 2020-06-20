@@ -1,20 +1,24 @@
 #!/bin/bash
 
+chsh -s $(which zsh)
+echo "export EDITOR=micro" >> ~/.zshenv
+echo "export VISUAL=micro" >> ~/.zshenv
+echo "export EDITOR=micro" >> ~/.bashrc
+echo "export VISUAL=micro" >> ~/.bashrc
+
 echo "===== Installing nix"
 curl -s -L https://nixos.org/nix/install | sh 2> /dev/null
-. /home/hansbarnard/.nix-profile/etc/profile.d/nix.sh
+. /home/$USER/.nix-profile/etc/profile.d/nix.sh
+echo "if [ -e /home/$USER/.nix-profile/etc/profile.d/nix.sh ]; then . /home/$USER/.nix-profile/etc/profile.d/nix.sh; fi" >> ~/.zshenv
+echo "if [ -e /home/$USER/.nix-profile/etc/profile.d/nix.sh ]; then . /home/$USER/.nix-profile/etc/profile.d/nix.sh; fi" >> ~/.bashrc
 
 echo "===== Installing micro and caffeine"
 nix-env -i micro gnomeExtensions.caffeine --quiet
 
-echo =======Install SDKMan
-curl -s "https://get.sdkman.io" | bash  &> /dev/null
-source "$HOME/.sdkman/bin/sdkman-init.sh" &> /dev/null
-sdk version
-
-echo =======Install java
-sdk install java 8.0.252-open &> /dev/null
-java -version
+echo "===== Installing oh-my-zsh"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 echo "===== Installing yay"
 cd /tmp
@@ -43,6 +47,15 @@ yay -Sqy onedrive-abraunegg --noconfirm --answerclean No --nodiffmenu &> /dev/nu
 
 echo ===== Install amazon-workspacesclient
 yay -Sqy amazon-workspacesclient --noconfirm --answerclean No --nodiffmenu &> /dev/null
+
+echo =======Install SDKMan
+curl -s "https://get.sdkman.io" | bash  &> /dev/null
+source "$HOME/.sdkman/bin/sdkman-init.sh" &> /dev/null
+sdk version
+
+echo =======Install java
+sdk install java 8.0.252-open &> /dev/null
+java -version
 
 echo "===== Exiting from user install"
 

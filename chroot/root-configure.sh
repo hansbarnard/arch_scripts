@@ -48,7 +48,8 @@ echo "===== Setting up accounts"
 echo "root:changeme" | chpasswd
 useradd -m "$USER_NAME"
 echo "$USER_NAME:changeme" | chpasswd
-echo "$USER_NAME ALL=(ALL) NOPASSWD: ALL">"/etc/sudoers.d/$USER_NAME"
+echo "$USER_NAME ALL=(ALL) ALL">"/etc/sudoers.d/$USER_NAME"
+echo "Defaults:$USER_NAME timestamp_timeout=10" >> "/etc/sudoers.d/$USER_NAME"
 
 echo '===== Improving MAKEFLAG for multicore CPU'
 echo 'MAKEFLAGS="-j $(nproc)"' >> /etc/makepkg.conf
