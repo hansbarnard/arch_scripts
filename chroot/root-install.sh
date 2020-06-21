@@ -6,7 +6,7 @@ systemctl enable NetworkManager 1>/dev/null
 
 
 echo "===== Installing additional"
-pacman -Sqyy tree zip unzip vi zsh ncdu htop git reflector efibootmgr privoxy --noconfirm 1> /dev/null
+pacman -Sqyy tree zip unzip vi zsh ncdu htop git reflector efibootmgr privoxy xclip --noconfirm 1> /dev/null
 
 echo '=====Install bluetooth and printers'
 pacman -Sq bluez bluez-utils cups cups-pdf --noconfirm 1>/dev/null

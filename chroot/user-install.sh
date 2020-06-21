@@ -12,6 +12,11 @@ curl -s -L https://nixos.org/nix/install | sh 2> /dev/null
 echo "if [ -e /home/$USER/.nix-profile/etc/profile.d/nix.sh ]; then . /home/$USER/.nix-profile/etc/profile.d/nix.sh; fi" >> ~/.zshenv
 echo "if [ -e /home/$USER/.nix-profile/etc/profile.d/nix.sh ]; then . /home/$USER/.nix-profile/etc/profile.d/nix.sh; fi" >> ~/.bashrc
 
+echo "===== Installing skype"
+mkdir -p ~/.config/nixpkgs
+echo "{ allowUnfree = true; }" >> ~/.config/nixpkgs/config.nix
+nix-env -i skypeforlinux --quit
+
 echo "===== Installing micro and caffeine"
 nix-env -i micro gnomeExtensions.caffeine --quiet
 
