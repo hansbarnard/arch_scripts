@@ -10,8 +10,8 @@ arch-chroot /mnt /scripts/root-configure.sh
 echo "===== Calling root install"
 arch-chroot /mnt /scripts/root-install.sh
 
-echo "===== Installing gnome"
-arch-chroot /mnt /scripts/gnome/install-gnome.sh
+#echo "===== Installing gnome"
+#arch-chroot /mnt /scripts/gnome/install-gnome.sh
 
 #echo "===== Installing deepin"
 #arch-chroot /mnt /scripts/deepin/install-deepin.sh

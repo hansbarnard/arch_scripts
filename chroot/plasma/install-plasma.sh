@@ -1,7 +1,8 @@
 #!/bin/bash
 
 echo "===== Installing plasma desktop"
-pacman -S plasma-desktop kscreen plasma-wayland-session plasma-nm powerdevil --needed --noconfirm 1>/dev/null
+pacman -S plasma-desktop kscreen plasma-wayland-session sddm plasma-nm powerdevil partitionmanager --needed --noconfirm 1>/dev/null
+systemctl enable sddm.service 1>/dev/null
 
 echo "===== Installing plasma selected"
 selected_packages=$(grep -i $'^Y\s' /scripts/plasma/plasma-packages-selection.txt | awk -v ORS=' ' -F'\t' '{print $2}' )

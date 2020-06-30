@@ -46,12 +46,22 @@ yay -Sy teams --noconfirm --answerclean No --nodiffmenu  &> /dev/null
 echo "===== Installing FreeOffice"
 yay -Sy freeoffice --noconfirm --answerclean No --nodiffmenu  &> /dev/null
 
+echo "===== Installing postman"
+yay -Sy postman --noconfirm --answerclean No --nodiffmenu  &> /dev/null
+
 echo ===== Install OneDrive
 yay -Sqy onedrive-abraunegg --noconfirm --answerclean No --nodiffmenu &> /dev/null
+
+echo ===== Install zoom
+yay -Sqy zoom --noconfirm --answerclean No --nodiffmenu &> /dev/null
 
 
 echo ===== Install amazon-workspacesclient
 yay -Sqy amazon-workspacesclient --noconfirm --answerclean No --nodiffmenu &> /dev/null
+
+echo ===== Install ctop
+yay -Sqy ctop --noconfirm --answerclean No --nodiffmenu &> /dev/null
+
 
 echo =======Install SDKMan
 curl -s "https://get.sdkman.io" | bash  &> /dev/null
